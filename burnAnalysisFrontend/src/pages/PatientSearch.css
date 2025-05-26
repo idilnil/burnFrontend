@@ -1,0 +1,181 @@
+/* PatientSearch.css */
+
+.patient-search-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.patient-search-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.search-input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 40%; /* Genişliği artırabilirsiniz */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.records-per-page-selector {
+  display: flex;
+  align-items: center;
+}
+
+.records-per-page-selector label {
+  margin-right: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.records-per-page-selector select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 6px; /* Tablo kenarlarına yuvarlaklık */
+  overflow: hidden; /* Yuvarlak kenarların düzgün görünmesi için */
+}
+
+.patients-table th,
+.patients-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px; /* Padding artırıldı */
+  text-align: left;
+  font-size: 0.95em; /* Yazı tipi boyutu ayarlandı */
+}
+
+.patients-table th {
+  background-color: #007bff; /* Başlık arka plan rengi */
+  color: white; /* Başlık yazı rengi */
+  font-weight: 600; /* Başlık font kalınlığı */
+}
+
+.patients-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Çift sıralara farklı arka plan */
+}
+
+.patients-table tbody tr:hover {
+  background-color: #e9ecef; /* Üzerine gelince arka plan */
+}
+
+.loading-text,
+.error-text,
+.no-records-text {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.error-text {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+}
+
+.no-records-text {
+  color: #777;
+}
+
+/* Buton Grupları ve Butonlar */
+.action-button-group {
+  display: flex;
+  gap: 8px; /* Butonlar arası boşluk */
+  justify-content: flex-start; /* Butonları sola yasla */
+}
+
+.action-button {
+  display: inline-flex; /* İkon ve metni yan yana getirmek için */
+  align-items: center;  /* İkon ve metni dikeyde ortalamak için */
+  gap: 6px; /* İkon ve metin arası boşluk */
+  padding: 6px 10px; /* İç boşluk azaltıldı */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em; /* Font boyutu biraz küçültüldü */
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  text-decoration: none; /* Link gibi görünmesin */
+  color: white; /* Genel yazı rengi */
+}
+
+.action-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px); /* Hafif yukarı kalkma efekti */
+}
+
+.action-button:active {
+  transform: translateY(0px);
+}
+
+.view-button {
+  background-color: #5bc0de; /* Bilgi mavisi */
+}
+.view-button:hover {
+  background-color: #31b0d5;
+}
+
+.delete-button {
+  background-color: #d9534f; /* Tehlike kırmızısı */
+}
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+/* PatientSearch.css - Geçici Test Stili */
+.pagination {
+  display: flex; /* Görünür olması için temel */
+  border: 2px solid red; /* Sınırları gör */
+  padding: 20px;
+  margin-top: 20px;
+  background-color: yellow; /* Arka planı belirgin yap */
+}
+
+.pagination-button {
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 5px;
+  color: black; /* İkon rengi */
+  font-size: 16px; /* İkon boyutu */
+}
+
+.page-info {
+  border: 1px solid green;
+  padding: 10px;
+  color: black;
+}
