@@ -1,0 +1,118 @@
+/* EditDoctorPage.css */
+
+.edit-doctor-container {
+  display: flex;
+  justify-content: center; /* Formu yatayda ortalar */
+  align-items: center;   /* Formu dikeyde ortalar (masaüstü için) */
+  height: 100vh;
+  position: relative; /* Geri dön butonu için konumlandırma referansı */
+  padding-top: 60px;  /* Geri dön butonunun altından başlaması için içeriğe üstten boşluk */
+  box-sizing: border-box; /* Padding'i yüksekliğe dahil et */
+  background-color: #f4f7f6; /* Sayfa arka plan rengi eklendi (isteğe bağlı) */
+}
+
+.edit-doctor-page {
+  width: 400px;
+  padding: 25px 30px; /* Padding biraz artırıldı */
+  border-radius: 10px; /* Köşe yuvarlaklığı artırıldı */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Gölge belirginleştirildi */
+  background-color: #fff;
+  text-align: center;
+}
+
+.edit-doctor-page h1 {
+  margin-bottom: 25px; /* Boşluk artırıldı */
+  color: #333; /* Başlık rengi */
+  font-size: 24px; /* Başlık font boyutu */
+}
+
+.edit-doctor-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Elemanlar arası boşluk eklendi */
+}
+
+.edit-doctor-page input,
+.edit-doctor-page select {
+  padding: 12px; /* Padding artırıldı */
+  font-size: 16px;
+  border: 1px solid #ddd; /* Kenarlık eklendi */
+  border-radius: 6px; /* Köşe yuvarlaklığı eklendi */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+}
+
+.edit-doctor-page input:focus,
+.edit-doctor-page select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.edit-doctor-page button[type="submit"] { /* Sadece submit butonunu hedefle */
+  padding: 12px; /* Padding artırıldı */
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px; /* Köşe yuvarlaklığı eklendi */
+  transition: background-color 0.2s ease-in-out; /* Geçiş efekti */
+}
+
+.edit-doctor-page button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Geri Dön Butonu */
+.back-button {
+  position: absolute;   /* Konteynerine göre mutlak konumlandırma */
+  top: 20px;            /* Üstten boşluk */
+  left: 20px;           /* Soldan boşluk */
+  width: auto;          /* Genişlik içeriğe göre otomatik */
+  padding: 10px 15px;   /* Buton içi boşluk */
+  background-color: #6c757d; /* Farklı bir renk (isteğe bağlı) */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;   /* Köşe yuvarlaklığı */
+  z-index: 10;          /* Diğer elemanların üzerinde olması için */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #5a6268; /* Hover rengi */
+}
+
+/* Mobil Cihazlar İçin Ek Ayarlamalar */
+@media (max-width: 700px) {
+  .edit-doctor-container {
+    align-items: flex-start; /* Formu yukarıdan başlat */
+    padding-top: 80px;      /* Mobil için üst boşluk, geri butonunun altına */
+  }
+
+  .edit-doctor-page {
+    width: 90%;        /* Ekran genişliğinin %90'ını kapla */
+    margin-top: 0; /* align-items: flex-start ile zaten yukarıda, ekstra margin'e gerek yok */
+    padding: 20px;
+  }
+
+  .edit-doctor-page h1 {
+    font-size: 20px; /* Mobilde başlık biraz daha küçük */
+  }
+
+  .edit-doctor-page input,
+  .edit-doctor-page select,
+  .edit-doctor-page button[type="submit"] {
+    font-size: 15px; /* Mobilde fontlar biraz daha küçük */
+  }
+  
+  .back-button {
+    top: 15px;            /* Mobil için üstten boşluk */
+    left: 15px;           /* Mobil için soldan boşluk */
+    padding: 8px 12px;    /* Mobil için buton içi boşluk */
+    font-size: 14px;      /* Mobil için font boyutu */
+  }
+}

@@ -1,0 +1,122 @@
+.menu-page-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ecf0f1; /* sağ alan*/
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.sidebar {
+  width: 220px;
+  background-color:#7ba9db; /*menu*/
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 20px;
+}
+
+.menu-item {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 0;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color:black;; /* Açık mavi çizgi */
+  margin: 0 20px 0 20px;
+}
+
+.menu-item:hover {
+  border-left: 4px solid #3399ff; /* Hoverda mavi çizgi vurgusu */
+  background-color: #004080;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-box {
+  background-color: #BBDEFB; /* hoşgeldiniz*/
+  padding: 40px 60px;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  box-shadow: 0 0 2px #7ba9db(0, 0, 0, 0.5);
+  user-select: none;
+  border: 1px solid ;
+}
+
+/* Profil kısmı sağ üst */
+.profile-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 36px;
+  color: #1976D2;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #1976D2;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding: 10px;
+  min-width: 160px;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  color: #1976D2;
+  font-weight: bold;
+}
+
+.doctor-name {
+  font-size: 16px;
+  margin-left: 8px;
+  color: black;
+}
+.logout-button {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #f44336;
+  color: white;
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #e53935; /* Red tone on hover */
+}
