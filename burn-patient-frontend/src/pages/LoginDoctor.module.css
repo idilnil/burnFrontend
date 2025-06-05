@@ -1,0 +1,95 @@
+/*Login Container Doctor*/
+
+.login-container-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #ecf0f1;
+  position: relative;
+}
+
+/* Back button */
+.login-container-doctor__back-button {
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.login-container-doctor__back-button:hover {
+  color: #1976D2;
+}
+
+/* Form */
+.login-container-doctor__form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Title */
+.login-container-doctor__title {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.login-container-doctor__input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button */
+.login-container-doctor__button {
+  width: 60%;
+  padding: 8px;
+  background-color: #1976D2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+.login-container-doctor__button:hover {
+  background-color: #1565C0;
+}
+
+/* Error / Success */
+.login-container-doctor__error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-container-doctor__success {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}

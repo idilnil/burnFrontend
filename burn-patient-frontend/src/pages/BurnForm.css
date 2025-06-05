@@ -1,0 +1,129 @@
+.burn-form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #B0BEC5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: none;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Ortalamak için eklendi */
+}
+
+form {
+  background-color: #CFD8DC;
+  box-shadow:black;
+  width: 100%; /* ✅ Formun kutuya tam oturması için */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+
+  box-shadow: none;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#admissionDateLabel {
+  font-size: 1 rem;
+  margin-bottom: 0px;
+  line-height: 0.81;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {/*kaydet butonu*/
+  background-color: #7ba9db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/*button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}*/
+
+.photo-preview img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-color:  #7ba9db;  /* İstenen sabit renk */
+  color: white;               /* Yazı rengi */
+  border: none;
+  padding: 12px 10px;
+  width: 100px;          /* Daha kısa ve dar */
+  font-size: 15px;
+  border-radius: 6;           /* Köşeler düz */
+  cursor: pointer;
+  transition: none;           /* Efekt yok */
+  box-shadow: none;           /* Gölge yok */
+  transform: none;            /* Büyüme efekti olmasın */
+}
+
+.back-button:hover,
+.back-button:focus,
+.back-button:active {
+  background-color: none;  /* Hover'da da aynı renk kalsın */
+  color: white;               /* Renk sabit */
+  transform: none;            /* Büyüme veya animasyon yok */
+  box-shadow: none;           /* Gölge yok */
+}
+
+
+
